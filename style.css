@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/dr1lboqfo/image/upload/v1671714316/alaska/codigos_wdxst2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position: center center;
+  height: 80vh;
+}
+
+.contenido-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.contenido-header h1 {
+  text-align: center;
+  color: orangered;
+}
+
+#nav ul li a {
+  color: whitesmoke;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+#nav ul li a:hover {
+  color: orangered;
+}
+
+#links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 120px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.6s;
+}
+
+.redes a:hover {
+  color: orangered;
+}
+
+.presentacion {
+  max-width: 1600px;
+  height: 80vh;
+  margin: auto;
+  columns: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.bievenida {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.titulo-main {
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.nombreyap {
+  color: orangered;
+}
+
+.descripcion {
+  max-width: 1600px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.presentacion a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 25px;
+  padding: 20px 25px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 50px;
+  color: whitesmoke;
+}
+
+.presentacion a:hover {
+  background-color: orangered;
+}
