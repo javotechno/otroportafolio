@@ -19,21 +19,27 @@
     <title>Portafolio Javier Rivarola</title>
   </head>
   <body>
+    <main>
     <!-- inicio -->
     <section id="inicio">
       <div class="contenido">
         <header class="">
           <div class="contenido-header">
             <h1>JR</h1>
-            <nav id="nav" class="nav1">
+            <nav id="nav" class="">
               <ul id="links">
-                <li><a href="#inicio" class="seccioninicio">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portfolio">Porfolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                  <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                  <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                  <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                  <li><a href="#portfolio" onclick="seleccionar(this)">Portafolio</a></li>
+                  <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
               </ul>
-            </nav>
+          </nav>
+
+          <!-- Icono del menu responsive -->
+          <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
 
             <!-- Iconos del menu-->
             <div id="icono-nav"></div>
@@ -55,14 +61,56 @@
             desarrollador web
           </h2>
           <p class="descripcion">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-            eum quia perspiciatis dignissimos assumenda nemo excepturi omnis
-            impedit ullam iste inventore, repellendus necessitatibus tempora
-            esse ab. Laborum, natus? Fuga, vitae?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo inventore numquam tenetur, magni nulla odio cum at eveniet temporibus explicabo neque rem, maxime nesciunt cupiditate. Rem nihil pariatur dignissimos!
           </p>
-          <a href="portfolio"> Ir a Portafolio</a>
+          <a href="portfolio"> Ir a mi Portafolio</a>
         </div>
       </div>
     </section>
+
+    <!--sobre mi-->
+    <seccion id="sobremi">
+      <div class="contenedor-foto">
+        <img src="./fotocarnet.jpg" alt="photo">
+      </div>
+      <div class="sobremi">
+          <p class="titulo-seccion">Sobre Mi</p>
+          <h2>Hola, Soy <span>Javier Rivarola</span></h2>
+          <p>Me considero una persona sociable y solidaria, me siento a gusto cuando tengo que trabajar en equipo.
+            Me gusta tomar las actividades de manera responsable. Soy flexible ante los cambios imprevistos.
+            Además tengo mucha voluntad y disfruto mucho el aprender cosas nuevas. Intento crecer y desarrollarme en el mundo personal y laboral, aportando mis mejores aptitudes para el beneficio del trabajo.</p>
+      </div>
+  </section>
+      </div>
+    </seccion>
+    <section>
+      <div class="cover">
+            
+        <div class="text__information-cover">
+            <h1>Educacion, cursos y experiencias distintas</h1>
+            <p>Curso Udemy de programador en desarrollo Web (HTML, CSS, SASS, JAVASCRIPT).  (2021)</p>
+            <p>Curso Udemy de programador en Data Analyst (Análisis y visualización de Datos
+              ▪SQL: Desarrollo y gestión de bases de datos
+              ▪SQL para el análisis de datos
+              ▪SQL: Administración de base de datos).  (2022)</p>
+              <p> urso Udemy en JAVA (FullStack Java Developer). (2022)</p>
+              <p>Curso en CODERHOUSE FULLSTACK 1 año. (En progreso hasta la actualidad)
+              </p>
+            <div class="buttons__cover">
+                <input type="button" class="btn__register-cover" value="Descargar CV">
+            </div>
+
+        </div>
+
+        <div class="media__cover">
+            <video src="animacion_cover.webm" autoplay playinline loop muted preload="auto"></video>
+        </div>
+
+
+    </div>
+
+    </section>
+  </main>
+  <script src="./script.js"></script>
   </body>
 </html>
